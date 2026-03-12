@@ -1,0 +1,26 @@
+# ==================
+# .NET / ASP.NET
+# ==================
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+
+# Base de datos local
+*.db
+
+# Configuración local
+appsettings.Development.json
+
+# ==================
+# Visual Studio
+# ==================
+.vs/
+
+# ==================
+# Sistema
+# ==================
+.DS_Store
+Thumbs.db
+*.log

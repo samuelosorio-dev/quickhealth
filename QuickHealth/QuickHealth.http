@@ -1,0 +1,6 @@
+@QuickHealth_HostAddress = http://localhost:5239
+
+GET {{QuickHealth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
