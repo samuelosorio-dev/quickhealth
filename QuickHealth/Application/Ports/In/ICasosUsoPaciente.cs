@@ -1,4 +1,4 @@
-﻿using QuickHealth.Infrastructure.DTOs;
+﻿using QuickHealth.Application.DTOs;
 
 namespace QuickHealth.Application.Ports.In
 {

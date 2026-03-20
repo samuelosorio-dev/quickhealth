@@ -1,6 +1,7 @@
 using FluentValidation;
 using Mapster;
 using Microsoft.EntityFrameworkCore;
+using QuickHealth.Application.DTOs;
 using QuickHealth.Application.Mappings;
 using QuickHealth.Application.Ports.In;
 using QuickHealth.Application.Ports.Out;
@@ -8,7 +9,6 @@ using QuickHealth.Application.UseCases;
 using QuickHealth.Application.Validators;
 using QuickHealth.Infrastructure.Adapters.Out.Persistence.Context;
 using QuickHealth.Infrastructure.Adapters.Out.Persistence.Repositories;
-using QuickHealth.Infrastructure.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
 
