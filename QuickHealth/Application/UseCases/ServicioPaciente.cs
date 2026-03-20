@@ -1,9 +1,9 @@
 ﻿using Mapster;
-using QuickHealth.Application.DTOs;
 using QuickHealth.Application.Ports.In;
 using QuickHealth.Application.Ports.Out;
 using QuickHealth.Domain.Exception;
 using QuickHealth.Domain.Model;
+using QuickHealth.Infrastructure.DTOs;
 
 namespace QuickHealth.Application.UseCases
 {

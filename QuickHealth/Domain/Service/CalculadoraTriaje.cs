@@ -12,6 +12,7 @@
 
             // El signo vital más crítico define la prioridad del paciente
             return Math.Min(nivelFC, Math.Min(nivelTemp, nivelPresion));
+
         }
 
         public static string ObtenerDescripcion(int nivel) => nivel switch

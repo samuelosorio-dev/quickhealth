@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace QuickHealth.Application.DTOs
+namespace QuickHealth.Infrastructure.DTOs
 {
-    public class CrearPacienteRequestDTO
+    public class PacienteResponseDTO
     {
+        public int Id { get; set; }
         [Required]
         public required string Nombre { get; set; }
         public int Edad { get; set; }
@@ -13,5 +14,8 @@ namespace QuickHealth.Application.DTOs
         public double Temperatura { get; set; }
         public int PresionSistolica { get; set; }
         public int PresionDiastolica { get; set; }
+        public int NivelPrioridad { get; set; }
+        public string DescripcionPrioridad { get; set; } = null!;
+        public DateTime FechaRegistro { get; set; }
     }
 }

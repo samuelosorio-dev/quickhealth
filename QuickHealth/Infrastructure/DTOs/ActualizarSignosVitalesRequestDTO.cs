@@ -1,4 +1,4 @@
-﻿namespace QuickHealth.Application.DTOs
+﻿namespace QuickHealth.Infrastructure.DTOs
 {
     public class ActualizarSignosVitalesRequestDTO
     {

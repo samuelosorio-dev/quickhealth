@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using QuickHealth.Application.DTOs;
 using QuickHealth.Application.Ports.In;
 using QuickHealth.Domain.Exception;
+using QuickHealth.Infrastructure.DTOs;
 
 namespace QuickHealth.Infrastructure.Adapters.In.Rest.Controllers
 {

@@ -1,7 +1,7 @@
 ﻿using Mapster;
-using QuickHealth.Application.DTOs;
 using QuickHealth.Domain.Model;
 using QuickHealth.Domain.Service;
+using QuickHealth.Infrastructure.DTOs;
 
 namespace QuickHealth.Application.Mappings
 {

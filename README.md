@@ -34,7 +34,6 @@ QuickHealth/
 │   │   ├── In/                     # ICasosUsoPaciente (puerto de entrada)
 │   │   └── Out/                    # IRepositorioPaciente (puerto de salida)
 │   ├── UseCases/                   # ServicioPaciente
-│   ├── DTOs/                       # Objetos de transferencia
 │   ├── Mappings/                   # Configuración de Mapster
 │   └── Validators/                 # Validaciones con FluentValidation
 │
@@ -47,6 +46,7 @@ QuickHealth/
             ├── Repositories/       # RepositorioPaciente (SQL Server)
             │                       # RepositorioPacienteMemoria (In-Memory)
             └── Migrations/
+    ├── DTOs/                       # Objetos de transferencia        
 ```
 
 ### Patrones de diseño aplicados
@@ -70,18 +70,18 @@ QuickHealth/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/QuickHealth.git
+git clone https://github.com/samuelosorio-dev/QuickHealth.git
 cd QuickHealth
 ```
 
 ### 2. Configurar la cadena de conexión
 
-Abre el archivo `appsettings.json` y reemplaza `TU_SERVIDOR_SQL` con el nombre de tu instancia de SQL Server:
+Abre el archivo `appsettings.json` y reemplaza `TU_SERVIDOR` con el nombre de tu instancia de SQL Server:
 
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=TU_SERVIDOR_SQL;Database=QuickHealth;Integrated Security=True;TrustServerCertificate=True"
+    "DefaultConnection": "Server=TU_SERVIDOR;Database=QuickHealth;Integrated Security=True;TrustServerCertificate=True"
   }
 }
 ```
@@ -125,7 +125,7 @@ El sistema calcula automáticamente el nivel de prioridad según los signos vita
 curl -X POST https://localhost:7291/api/pacientes \
   -H "Content-Type: application/json" \
   -d '{
-    "nombreCompleto": "Juan Pérez",
+    "nombre": "Juan Pérez",
     "edad": 45,
     "documento": "123456789",
     "frecuenciaCardiaca": 130,
@@ -139,7 +139,7 @@ curl -X POST https://localhost:7291/api/pacientes \
 ```json
 {
   "id": 1,
-  "nombreCompleto": "Juan Pérez",
+  "nombre": "Juan Pérez",
   "edad": 45,
   "documento": "123456789",
   "frecuenciaCardiaca": 130,
@@ -174,7 +174,7 @@ curl -X GET https://localhost:7291/api/pacientes/1
 ```json
 {
   "id": 1,
-  "nombreCompleto": "Juan Pérez",
+  "nombre": "Juan Pérez",
   "edad": 45,
   "documento": "123456789",
   "frecuenciaCardiaca": 130,
@@ -209,7 +209,7 @@ curl -X PUT https://localhost:7291/api/pacientes/1 \
 ```json
 {
   "id": 1,
-  "nombreCompleto": "Juan Pérez",
+  "nombre": "Juan Pérez",
   "edad": 45,
   "documento": "123456789",
   "frecuenciaCardiaca": 75,

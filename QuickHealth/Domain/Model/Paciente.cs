@@ -58,6 +58,8 @@ namespace QuickHealth.Domain.Model
             };
         }
 
+        
+
         public void ActualizarSignosVitales(
         int frecuenciaCardiaca, double temperatura,
         int presionSistolica, int presionDiastolica)
